@@ -35,7 +35,7 @@ public class ListandoVeiculo {
 				}
 				
 			}else{
-				System.out.println("Veículo não posui foto na pasta.");
+				System.out.println("Veículo não posui foto na pasta padrão.");
 			}
 		}
 		manager.close();
