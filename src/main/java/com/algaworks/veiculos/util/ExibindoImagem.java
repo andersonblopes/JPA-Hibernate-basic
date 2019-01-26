@@ -18,7 +18,7 @@ public class ExibindoImagem {
 		EntityManager manager = JpaUtil.getEntityManager();
 		Veiculo veiculo = manager.find(Veiculo.class, 1L);
 		
-		if(veiculo.getFoto() != null){
+		if(veiculo != null && veiculo.getFoto() != null){
 			BufferedImage image = ImageIO.read(new ByteArrayInputStream(veiculo.getFoto()));
 			JOptionPane.showMessageDialog(null, new JLabel(new ImageIcon(image)));
 		}else{

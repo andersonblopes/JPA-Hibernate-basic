@@ -44,7 +44,7 @@ public class PersistindoVeiculo {
 		especificacoes.append("IPVA pago, aceita financiamento.");
 
 		// Ler foto do arquivo
-		Path path = FileSystems.getDefault().getPath("D:/projetos/img/hb20.jpg");
+		Path path = FileSystems.getDefault().getPath("img/hb20.jpg");
 		byte[] foto = Files.readAllBytes(path);
 
 		Proprietario proprietario = new Proprietario();
@@ -71,7 +71,7 @@ public class PersistindoVeiculo {
 		manager.persist(veiculo);
 
 		// Ler foto do arquivo
-		path = FileSystems.getDefault().getPath("D:/projetos/img/ix35.jpg");
+		path = FileSystems.getDefault().getPath("img/ix35.jpg");
 		foto = Files.readAllBytes(path);
 
 		Veiculo veiculo1 = new Veiculo();
@@ -92,7 +92,7 @@ public class PersistindoVeiculo {
 		Veiculo veiculo2 = new Veiculo();
 
 		// Ler foto do arquivo
-		path = FileSystems.getDefault().getPath("D:/projetos/img/sf.jpg");
+		path = FileSystems.getDefault().getPath("img/sf.jpg");
 		foto = Files.readAllBytes(path);
 
 		veiculo2.setFabricante("HYUNDAY");
