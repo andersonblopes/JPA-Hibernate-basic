@@ -9,7 +9,8 @@ public class JpaUtil {
 	private static EntityManagerFactory factory;
 
 	static {
-		factory = Persistence.createEntityManagerFactory("default");
+		factory = Persistence.createEntityManagerFactory("PU-PostgreSQL");
+		//factory = Persistence.createEntityManagerFactory("PU-H2");
 	}
 
 	public static EntityManager getEntityManager() {

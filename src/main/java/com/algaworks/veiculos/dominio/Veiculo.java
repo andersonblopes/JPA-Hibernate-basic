@@ -30,7 +30,7 @@ public class Veiculo implements Serializable {
 
 	private static final long serialVersionUID = 6988843590835066781L;
 
-	//Uso de chave primária composta
+	//Uso de chave primï¿½ria composta
 	//private VeiculoId id;
 
 	private long codigo;
@@ -58,7 +58,7 @@ public class Veiculo implements Serializable {
 	}
 
 	/*
-	 *Uso de chave primária composta
+	 *Uso de chave primï¿½ria composta
 	 *@EmbeddedId
 	 *public VeiculoId getId() {
 		return id;
@@ -186,7 +186,7 @@ public class Veiculo implements Serializable {
 		return super.equals(obj);
 	}
 	
-	//Método de negócio
+	//Mï¿½todo de negï¿½cio
 	@Transient
 	public String getDescricao() {
 		return this.getFabricante() + " " + this.getModelo() + " " + this.getAnoFabricacao() + "/" + this.getAnoModelo() + " por apenas " + this.getValor(); 
